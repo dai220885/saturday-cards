@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react'
-
 import { Button } from './'
 
 const meta = {
@@ -19,6 +18,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
+  //можно передавать render, но тогда нужно, чтобы stories была tsx
   args: {
     variant: 'primary',
     children: 'Primary Button',
