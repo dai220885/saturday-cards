@@ -4,10 +4,13 @@ import './styles/index.scss'
 import { App } from './App'
 import { createRoot } from 'react-dom/client'
 import { StrictMode } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>
 )
 
