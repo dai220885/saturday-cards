@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { Button } from './'
+import { Logout } from '../../../assets/icons'
 
 const meta = {
   title: 'Components/Button',
@@ -22,6 +23,19 @@ export const Primary: Story = {
   args: {
     variant: 'primary',
     children: 'Primary Button',
+    disabled: false,
+  },
+}
+
+export const PrimaryIcon: Story = {
+  //можно передавать render, но тогда нужно, чтобы stories была tsx
+  args: {
+    variant: 'primary',
+    children: (
+      <>
+        <Logout /> Sign out
+      </>
+    ),
     disabled: false,
   },
 }
